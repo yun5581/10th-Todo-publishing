@@ -1,0 +1,324 @@
+.top-bar{
+    z-index: 2;
+    position: absolute;
+    width: 1920px;
+    height: 103px;
+    left: 0px;
+    top: 0px;
+    background: #7277FF;
+}
+.top-bar1{
+    position: absolute;
+    width: 162px;
+    height: 64px;
+    left: 48px;
+    top: 20px;
+}
+.top-bar2{
+    position: absolute;
+    width: 119px;
+    height: 30px;
+    left: 308px;
+    top: 33px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+.top-bar3{
+    position: absolute;
+    width: 119px;
+    height: 30px;
+    left: 427px;
+    top: 33px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+.top-bar4{
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    left: 1734px;
+    top: 23px;
+}
+.top-bar5{
+    position: absolute;
+    width: 52.24px;
+    height: 53.25px;
+    left: 1818.76px;
+    top: 25px;
+}
+.container{
+    position: absolute;
+    width: 1920px;
+    height: 1021px;
+    left: 0px;
+    top: 90px;
+    background: #F1EFFF;
+}
+.line{
+    z-index: 2;
+    position: absolute;
+    width: 1890px;
+    height: 0px;
+    left: 0px;
+    top: 197px;
+    border: 10px solid #A395CA;
+    background-color: #A395CA;
+}
+.left, .right{
+    z-index: 10;
+    position:absolute;
+    width: 182px;
+    height: 931px;
+    top: 90px;
+    border-radius: 0 40px 0 0;
+    box-shadow: inset -90px 5px 40px rgba(143,146,165,0.25);
+    background-color: #F1EFFF;
+}
+.left{left: 0px;}
+.right{
+    left: 1738px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.center{
+    z-index: 10;
+    position: absolute;
+    width: 1408px;
+    height: 931px;
+    left: 280px;
+    top: 90px;
+    background: #E3D9FE;
+    border-radius: 40px 40px 0 0;
+    box-shadow: inset -10px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.date{
+    position: absolute;
+    left: 590px;
+    top: 70px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+}
+.month{
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 41px;
+    color: #7277FF;
+}
+.dash{
+    position:absolute;
+    left: 50px;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 41px;
+    color: #7277FF;
+}
+.day{
+    position:absolute;
+    left: 70px;
+    top: 100px;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 41px;
+    color: #7277FF;
+}
+.today{
+    position: absolute;
+    left: 620px;
+    top: 240px;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+.todo-contents{
+    position: absolute;
+    width: 750px;
+    height: 581px;
+    left: 80px;
+    top: 350px;
+    background: #F6F1FF;
+}
+circle{
+    position: absolute;
+    border-radius: 100%;
+    width: 19px;
+    height: 19px;
+    left: 10px;
+    top: 8px;
+    background: #C4C4C4;
+}
+.todo-title, .done-title{
+    position: absolute;
+    width: 218px; 
+    height: 38px;
+    left: 39px;
+    top: 22px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 30px;
+    line-height: 41px;
+    color: #7277FF;
+}
+.todo-line1,.todo-line2,.todo-line3,.todo-line4,.todo-line5,.todo-line7,.todo-line8{
+    position: absolute;
+    width: 653px;
+    height: 0px;
+    left: 39px;
+    border: 1px solid #D8D9FF;
+    background-color: #D8D9FF;
+}
+.todo-line1{top: 84px;}
+.todo-line2{top: 152px;}
+.todo-line6{
+    position: absolute;
+    width: 653px;
+    height: 0px;
+    left: 39px;
+    top: 424px;
+    border: 1px solid #B9BCFE;
+    background-color: #B9BCFE;
+}
+.todo-line3{top: 220px;}
+.todo-line4{top: 288px;}
+.todo-line5{top: 356px;}
+.todo-line7{top: 492px;}
+.todo-line8{top: 560px;}
+
+.todo-input-items{
+    position: absolute;
+    left: 49px;
+    top: 442px;
+}
+.popup-button{
+    font-size: 20px;
+    font-weight:700;
+    position:absolute;
+    width: 28px;
+    height: 28px;
+    left: 0px;
+    top: 5px;
+    border-radius: 100%;
+    background-color: rgba( 255, 255, 255, 0);
+    color: #7277FF;
+    border: 2px solid #7277FF;
+}
+.todo-input{
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: #020076;
+    border: 0;
+    outline: 0;
+    background-color: #F6F1FF;
+}
+.todo-input-button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 590px;
+    top: 5px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+.todo-check-icon{
+    z-index: 100;
+    position: absolute;
+    left: 7px;
+    margin-top: 4px;
+}
+.todo-check-button{
+    position: absolute;
+    left: 13px;
+    margin-top: 25px;
+    width: 22px;
+    height: 22px;
+    background: #FFFFFF;
+    border: 1px solid #7277FF;
+}
+.todo-form{display: none;}
+.todo-list{
+    position: absolute;
+    width: 400px;
+    top: 57px;
+    left: 40px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: #020076;
+    list-style: none;
+    line-height: 68px;
+}
+.todo-item-text{
+    margin-left: 20px;
+}
+.todo-delete-button{
+    position: absolute;
+    left: 600px;
+    margin-top: 17px;
+    /* top값 줬을 때 왜 하나만 나오지? */
+    /* outline: 0;
+    border: 0;
+    background-color: transparent; */
+}
+.done-contents{
+    position: absolute;
+    width: 470px;
+    height: 581px;
+    left: 870px;
+    top: 350px;
+    background: #F6F1FF;
+}
+.done-line1, .done-line2,.done-line3,.done-line4,.done-line5,.done-line7,.done-line8{
+    position: absolute;
+    width: 366px;
+    height: 0px;
+    left: 41px;
+    border: 1px solid #D8D9FF;
+    background-color: #D8D9FF;
+}
+.done-line1{top: 83px;}
+.done-line2{top: 152px;}
+.done-line3{top: 220px;}
+.done-line4{top: 288px;}
+.done-line5{top: 356px;}
+.done-line6{
+    position: absolute;
+    width: 366px;
+    height: 0px;
+    left: 41px;
+    top: 424px;
+    border: 1px solid #B9BCFE;
+    background-color: #B9BCFE;
+}
+.done-line7{top: 492px;}
+.done-line8{top: 560px;}
+.done-list{
+    position: absolute;
+    width: 400px;
+    top: 57px;
+    left: 10px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33px;
+    color: #0200764A;
+    list-style: none;
+    line-height: 68px;
+}
