@@ -26,11 +26,11 @@
 
 
 ## 4)항목 삭제 화면
-![image](https://user-images.githubusercontent.com/97172766/168767308-dc54abc1-7984-44d9-a8fe-6e2d1bbc2950.png)
+![image](https://user-images.githubusercontent.com/97172766/168768112-b35fa831-54a6-4e0f-9ea5-2ebdc001218c.png)
 
 - 항목 삭제: 각 리스트 옆 휴지통 아이콘 클릭
 
 
 ---------------------
-[느낀점]
+### [느낀점]
 어려웠다.. 계속 업데이트하면서 항목별 색상변경, 날짜 이동까지 해결하고 싶다.
