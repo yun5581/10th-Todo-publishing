@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <title>Todo-list!</title>
+</head>
+<body>
+    <section class="top-bar">
+        <div class="top-bar1">
+            <img src="top-bar1.svg">
+        </div>
+        <div class="top-bar2">달력</div>
+        <div class="top-bar3">설정</div>
+        <div class="top-bar4"><img src="top-bar4.svg"></div>
+        <div class="top-bar5"><img src="top-bar5.svg"></div>
+    </section>
+    <section class="container">
+        <section class="line"></section>
+        <section class="left"></section>
+        <section class="right"></section>
+        <section class="center">
+            <div class="date">
+                <div class="month">5</div>
+                <div class="dash">/</div>
+                <div class="day">16</div>
+            </div>
+            <div class="today">화요일</div>
+            <div class="todo-contents">
+                <circle/>
+                <div class="todo-title">Contents</div>
+                <ul class="todo-list"></ul>
+                <div class="todo-input-items">
+                    <button class="popup-button">+</button>
+                    <form class="todo-form">
+                        <input class="todo-input" placeholder="할 일을 입력하세요" />
+                        <button class="todo-input-button" type="submit"><img src="pencil.png"></button>
+                    </form>
+                </div>
+                <div class="todo-line1"></div>
+                <div class="todo-line2"></div>
+                <div class="todo-line3"></div>
+                <div class="todo-line4"></div>
+                <div class="todo-line5"></div>
+                <div class="todo-line6"></div>
+                <div class="todo-line7"></div>
+                <div class="todo-line8"></div>
+            </div>
+            <div class="done-contents">
+                <circle/>
+                <div class="done-title">Done</div>
+                <ul class="done-list"></ul>
+                <div class="done-line1"></div>
+                <div class="done-line2"></div>
+                <div class="done-line3"></div>
+                <div class="done-line4"></div>
+                <div class="done-line5"></div>
+                <div class="done-line6"></div>
+                <div class="done-line7"></div>
+                <div class="done-line8"></div>
+            </div>
+        </section>
+    </secition>
+</body>
+<script src="todolist.js"></script>
+
+</html>
