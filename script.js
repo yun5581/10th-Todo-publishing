@@ -31,9 +31,10 @@ button.addEventListener("click",displayForm);
 
 // 입력된 값을 todo list에 추가
 const addTodoItem = () => {
+    todoListNum = document.querySelector(".todo-list").childElementCount; //실제 갯수보다 -1 반환 (추가하기 전에 list count 하기 때문)
     event.preventDefault(); //새로 고침 방지
     const todoContent = document.querySelector(".todo-input").value;
-    if (todoContent) printTodoItem(todoContent);
+    if (todoContent && (todoListNum <=4)) printTodoItem(todoContent); //todo-list 최대 수 5개이므로 printTodoItem 조건에 childElementCount 값 넣어줌
 };
 
 // 화면에 todo item을 추가
@@ -68,25 +69,32 @@ const printTodoItem = text => {
 };
 
 // check 누르면, check icon 추가, 글자색 변경
-const checkTodo = () =>{
+const checkTodo = e =>{ // 내부에서 e 사용하는 경우 인자로 e 넣어줘야함
     //chekc icon 생성
     const checkIcon = document.createElement("IMG");
     checkIcon.setAttribute("src","check.png");
     checkIcon.className = "todo-check-icon";
+
     //todo-list-item li에 자식 요소로 icon 넣기
-    listItem = document.querySelector(".todo-list-item");
+    // listItem = document.querySelector(".todo-list-item"); querySelector 쓰지 않기
+    //class명이 같은 경우 querySelector 쓰면, 첫번째로 생성된 list-item 즉 첫 자식요소를 선택해서 첫번째 줄에만 적용됨
+    listItem = e.target.parentNode;
     listItem.appendChild(checkIcon);
-    //todo-item-text 색상 변경
-    listText = document.querySelector(".todo-item-text");
+
+    // //todo-item-text 색상 변경, event 요소의 부모요소인 li로 올라가서, li에 속한 text가 첫 자식요소이므로, .firstChild로 선택
+    listText =listItem.firstChild;
     listText.style.color = "#0200764A";
-    //check-icon 누르면, check 해제
+    // //check-icon 누르면, check 해제
     checkIcon.addEventListener("click",uncheckTodo);
 };
 //check-icon 누르면, 삭제, todo-item-tex 색상변경
 const uncheckTodo = e =>{
     const checkIcon = e.target;
-    document.querySelector(".todo-check-icon").remove(checkIcon);
-    listText = document.querySelector(".todo-item-text");
+    checkIcon.style.display ="none";
+    //document.querySelector(".todo-check-icon").remove(checkIcon);
+    //class명이 같은 경우 
+    listItem = e.target.parentNode;
+    listText = listItem.firstChild;
     listText.style.color = "#020076";
 };
 
@@ -101,7 +109,8 @@ const toggleTodoToDone = e => { //e는 함수 생성에 이용되는 매개변�
     // todo List 에서 item 삭제
     deleteTodoItem(e);
     // done list에 item 추가
-    printDoneItem(e.target.innerText);  //printDoneItem 아래에서 만들기
+    doneListNum = document.querySelector(".done-list").childElementCount;
+    if (doneListNum<=4) printDoneItem(e.target.innerText); //done-list에 최대 5개까지 들어갈 수 있게 함
 }; //e.target == 이벤트가 발생한 태그(클릭 받은 태그)
 
 //done list 만들기

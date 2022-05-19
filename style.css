@@ -240,6 +240,10 @@ circle{
     left: 7px;
     margin-top: 4px;
 }
+.check-list{
+    list-style: none;
+    line-height: 68px;
+}
 .todo-check-button{
     position: absolute;
     left: 13px;
