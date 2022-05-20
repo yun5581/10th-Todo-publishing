@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #F8FBFF;
 }
 
 .fullscreen {
@@ -98,23 +99,254 @@ body {
     position: absolute;
 }
 
+.todo-index{
+    border: 0;
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 150px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #C6D8D8;
+    position: absolute;
+    font-size: 16pt;
+    padding-top: 7px;
+    padding-left: 45px;
+}
+
+#bar4{
+    margin-top: 15px;
+    margin-left: 600px;
+    position: absolute;
+}
+
+#bar5 {
+    margin-top: 15px;
+    margin-left: 600px;
+    position: absolute;
+}
+
 
 .todo-container{
     margin:50px;
     margin-left: 100px;
     border-radius: 5%;
     padding: 30px;
-    width: 40%;
-    height: 60%;
+    width: 650px;
+    height: 660px;
     background-color: #F3F3F1;
+    box-shadow: 0px 4px 4px 0px lightgray;
+    position: relative;
 }
 
-/* .done-conatainer{
+.todobox{
+    position: absolute;
+    width: 450px;
+    height: 121px;
+    left: 120px;
+    background: #C6D8D8;
+    box-shadow: 0px 4px 4px lightgray;
+    border-radius: 10px;
+}
+
+#tb1{
+    top: 50px;
+}
+
+#tb2{
+    top: 215px;
+}
+
+#tb3{
+    top: 380px;
+}
+
+.todoTodone-button{
+    outline: 0;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    font-size: large;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-top: 560px;
+    background-color: #F8FBFF;
+    box-shadow: 0px 4px 4px 0px lightgray;
+    position: absolute;
+}
+
+
+#ttbtn1{
+    margin-top: 20px;
+}
+#ttbtn2{
+    margin-top: 180px;
+}
+#ttbtn3{
+    margin-top: 340px;
+}
+
+hr{ 
+    margin-left: 10px;
+    margin-top: 510px;
+    position: absolute;
+}
+
+.todo-button{
+    outline: 0;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 28pt;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-left: 592px;
+    margin-top:488px;
+    background-color: #C6D8D8;
+    box-shadow: 0px 4px 4px 0px lightgray;
+    position: absolute;
+}
+
+.todo-input-button{
+    outline: 0;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 15pt;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-top: 570px;
+    background-color: #F8FBFF;
+    box-shadow: 0px 4px 4px 0px lightgray;
+    position: absolute;
+}
+
+.todo-input-title {
+
+    border-radius: 10px 10px 10px 10px;
+    outline: 0;
+    border: 0;
+    padding-left: 10px;
+    font-size: 18pt;
+    background-color: #C6D8D8;
+    width: 180px;
+    height: 45px;
+    margin-top: 570px;
+    margin-left: 80px;
+    box-shadow: 0px 4px 4px 0px lightgray;
+    position: absolute;
+}
+
+
+.todo-input-content {
+
+    border-radius: 10px 10px 10px 10px;
+    outline: 0;
+    border: 0;
+    padding-left: 10px;
+    font-size: 18pt;
+    background-color: #C6D8D8;
+    width: 320px;
+    height: 45px;
+    margin-top: 570px;
+    margin-left: 300px;
+    box-shadow: 0px 4px 4px 0px lightgray;
+    position: absolute;
+}
+
+
+.done-index{
+    border: 0;
+    width: 95px;
+    height: 40px;
+    margin-top: 105px;
+    margin-left: 1380px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #c4c4c4;
+    position: absolute;
+    font-size: 16pt;
+    padding-top: 7px;
+    padding-left: 45px;
+}
+
+#bar6 {
+    margin-top: 15px;
+    margin-left: 600px;
+    position: absolute;
+}
+#bar7 {
+    margin-top: 15px;
+    margin-left: 600px;
+    position: absolute;
+}
+
+.done-conatainer{
     margin:50px;
-    margin-right: 100px;
+    margin-top: 140px;
+    margin-left: 840px;
     border-radius: 5%;
     padding: 30px;
-    width: 80%;
-    height: 60%;
+    width: 650px;
+    height: 660px;
     background-color: #F3F3F1;
-} */
+    box-shadow: 0px 4px 4px 0px lightgray;
+    position: absolute;
+}
+
+.donebox{
+    position: absolute;
+    width: 450px;
+    height: 121px;
+    left: 130px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px lightgray;
+    border-radius: 10px;
+}
+
+#db1{
+    top: 50px;
+}
+
+#db2{
+    top: 215px;
+}
+
+.done-button{
+    outline: 0;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    font-size: large;
+    margin-right: 100px;
+    border-radius: 50%;
+    margin-top: 560px;
+    background-color: #F8FBFF;
+    box-shadow: 0px 4px 4px 0px lightgray;
+    position: absolute;
+}
+
+#dbtn1{
+    margin-top: 20px;
+}
+#dbtn2{
+    margin-top: 180px;
+}
+
+.donedel-button{
+    outline: 0;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    left: 530px;
+    font-size: 20pt;
+    background: rgba(248, 251, 255, 0.7);
+    box-shadow: 0px 4px 4px lightgray;
+    border-radius: 10px;  
+    position: absolute;
+}
+
+#ddbtn1{
+    margin-top: 15px;
+}
+#ddbtn2{
+    margin-top: 175px;
+}
