@@ -4,7 +4,6 @@ const init = () => {
   form.addEventListener("submit", addTodoItem);
 };
 
-
 const button = document.querySelector(".popup-button");
 
 const displayForm= () => {
